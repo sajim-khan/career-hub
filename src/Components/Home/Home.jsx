@@ -2,6 +2,7 @@ import React from 'react';
 import Img from '../../assets/All Images/P3OLGJ1 copy 1.png'
 import './Home.css'
 import JobCategory from '../JobCategory/JobCategory';
+import FeatureJob from '../FeatureJob/FeatureJob';
 
 const Home = () => {
     return (
@@ -29,6 +30,7 @@ const Home = () => {
           </div>
         </div>
         <JobCategory></JobCategory>
+        <FeatureJob></FeatureJob>
       </section>
     );
 };

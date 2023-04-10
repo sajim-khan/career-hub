@@ -28,6 +28,9 @@ const Header = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
                 <Link to="/statistics">
                   <span className="text">Statistics</span>
                 </Link>
@@ -41,12 +44,18 @@ const Header = () => {
             </ul>
           </div>
 
-          <Link className="btn btn-ghost normal-case text-4xl ms-10 lg:ms-16 " to="/">
+          <Link
+            className="btn btn-ghost normal-case text-4xl ms-10 lg:ms-16 "
+            to="/"
+          >
             JobSpot
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
             <li>
               <Link to="/statistics">
                 <span className="text">Statistics</span>
@@ -68,30 +77,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-
-
-/*
-<div className="bg-gray-200 py-3">
-        <nav className="flex space-x-60 items-center h-20 bg-gray-200">
-          <div>
-            <h1 className="text-3xl font-bold ms-24">
-              <Link to="/">JobSpot</Link>
-            </h1>
-          </div>
-          <div className="flex space-x-16 text-lg">
-            <Link to="/statistics">
-              <span className='text'>Statistics</span>
-            </Link>
-            <Link to="/apply">Applied Job</Link>
-            <Link to="/blogs">Blog</Link>
-          </div>
-          <div>
-            <button className="button text-white items-center font-bold py-2 px-4 rounded">
-              Start Applying
-            </button>
-          </div>
-        </nav>
-      </div>
-*/

@@ -7,8 +7,8 @@ import Design from "../../assets/Icons/business 1.png";
 const JobCategory = (props) => {
   return (
     <div>
-      <h1 className=" text-center text-4xl mt-20 font-sans font-bold pb-7">
-        Job Category List{" "}
+      <h1 className="text-center text-4xl mt-20 font-sans font-bold pb-7">
+        Job Category List
       </h1>
       <p className="text-center pb-3">
         Explore thousands of job opportunities with all the information you
