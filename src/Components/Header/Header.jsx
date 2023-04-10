@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-      <div className="navbar bg-base-100 py-4">
+      <div className="navbar bg-gray-200 py-4">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -54,7 +54,9 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to="/">Home</Link>
+              <Link className="me-3" to="/">
+                Home
+              </Link>
             </li>
             <li>
               <Link to="/statistics">
@@ -62,10 +64,14 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/apply">Applied Job</Link>
+              <Link className="ms-3" to="/apply">
+                Applied Job
+              </Link>
             </li>
             <li>
-              <Link to="/blogs">Blog</Link>
+              <Link className="ms-3" to="/blogs">
+                Blog
+              </Link>
             </li>
           </ul>
         </div>

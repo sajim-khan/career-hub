@@ -1,0 +1,42 @@
+[  
+    {  
+    "id": 1,    
+    "assignmentName": "Assignment 1",  
+    "assignmentMarks": 57 
+    },  
+    {  
+    "id": 2,   
+    "assignmentName": "Assignment 2",   
+    "assignmentMarks": 56
+    }, 
+    {    
+    "id": 3,  
+    "assignmentName": "Assignment 3",  
+    "assignmentMarks": 58 
+    }, 
+    {   
+    "id": 4, 
+    "assignmentName": "Assignment 4", 
+    "assignmentMarks": 60 
+    }, 
+    {   
+    "id": 5, 
+    "assignmentName": "Assignment 5", 
+    "assignmentMarks": 49 
+    },
+    {   
+    "id": 6,  
+    "assignmentName": "Assignment 6",   
+    "assignmentMarks": 60  
+    },  
+    {    
+    "id": 7, 
+    "assignmentName": "Assignment 7", 
+    "assignmentMarks": 60 
+    },
+    {    
+    "id": 8, 
+    "assignmentName": "Assignment 8", 
+    "assignmentMarks": 58 
+    }    
+]

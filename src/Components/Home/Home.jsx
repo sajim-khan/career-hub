@@ -7,11 +7,11 @@ import FeatureJob from '../FeatureJob/FeatureJob';
 const Home = () => {
     return (
       <section>
-        <div className="hero bg-base-200 ">
+        <div className="hero bg-gray-200 ">
           <div className="hero-content flex-col lg:flex-row-reverse lg:ps-24 ">
             <img
               src={Img}
-              className="max-w-sm rounded-lg shadow-2xl img me-20 "
+              className="max-w-sm rounded-lg  img me-20 "
             />
             <div className="lg:w-1/2 sm:mx-5">
               <h1 className="text-4xl font-bold">
