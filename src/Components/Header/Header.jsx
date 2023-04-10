@@ -41,7 +41,7 @@ const Header = () => {
             </ul>
           </div>
 
-          <Link className="btn btn-ghost normal-case text-4xl lg:ms-16 " to="/">
+          <Link className="btn btn-ghost normal-case text-4xl ms-10 lg:ms-16 " to="/">
             JobSpot
           </Link>
         </div>
@@ -61,7 +61,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end lg:pe-16">
-          <button className="button">Get started</button>
+          <button className="button">Start Applying</button>
         </div>
       </div>
     );

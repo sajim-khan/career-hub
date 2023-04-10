@@ -10,10 +10,10 @@ const Home = () => {
           <div className="hero-content flex-col lg:flex-row-reverse lg:ps-24 ">
             <img
               src={Img}
-              className="max-w-sm rounded-lg shadow-2xl img me-20 lg:w-1/2"
+              className="max-w-sm rounded-lg shadow-2xl img me-20 "
             />
             <div className="lg:w-1/2 sm:mx-5">
-              <h1 className="text-5xl font-bold">
+              <h1 className="text-4xl font-bold">
                 Education And Employment{" "}
                 <span className="ttl">Resource Center</span>
               </h1>
