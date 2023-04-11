@@ -1,13 +1,56 @@
-import React from 'react';
-import JobDetails from '../Job Details/JobDetails';
+import React from "react";
+import JobDetails from "../Job Details/JobDetails";
 
 const AppliedJob = () => {
-    return (
+  return (
+    <section>
       <div>
-        <h4>Applied Jobs</h4>
-        <JobDetails></JobDetails>
+        <h1 className="text-center font-semibold text-4xl bg-gray-200 py-10 ">
+          Applied Job
+        </h1>
       </div>
-    );
+      <div className="dropdown dropdown-right">
+        <label tabIndex={0} className="btn m-1">
+          Click
+        </label>
+        <ul
+          tabIndex={0}
+          className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+        >
+          <li>
+            <a>Item 1</a>
+          </li>
+          <li>
+            <a>Item 2</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div className="card card-side bg-base-100 mx-20 shadow-xl">
+          <figure className="p-5">
+            <img
+              src="/images/stock/photo-1635805737707-575885ab0820.jpg"
+              alt="Movie"
+            />
+          </figure>
+          <div className="card-body  justify-between">
+            <div>
+              <h2 className="card-title mb-3">Technical database engineer</h2>
+              <p className="mb-4">Google Inc</p>
+              <button className="me-5 button">Remote</button>
+              <button className="button">Full Time</button>
+              <div className=" my-5">
+                <p className="my-3">Dhaka, Bangladesh</p>
+                <p>Salary : 100k - 150k</p>
+              </div>
+            </div>
+            <div className="card-actions items-center lg:justify-end">
+              <button className="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
-
 export default AppliedJob;

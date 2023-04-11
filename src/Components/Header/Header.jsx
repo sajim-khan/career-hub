@@ -47,7 +47,7 @@ const Header = () => {
           <Link
             className="btn btn-ghost normal-case text-4xl ms-10 lg:ms-16 "
             to="/"
-          >
+          >        
             JobSpot
           </Link>
         </div>

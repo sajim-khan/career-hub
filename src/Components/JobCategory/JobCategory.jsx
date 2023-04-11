@@ -14,8 +14,8 @@ const JobCategory = (props) => {
         Explore thousands of job opportunities with all the information you
         need. Its your future
       </p>
-      <section className="lg:flex gap-6 lg:mx-20 py-10 my-5">
-        <div className="card w-96 bg-base-100 shadow-xl">
+      <section className="lg:flex  lg:grid-cols-4 gap-6 lg:mx-20 py-10 my-5">
+        <div className="card w-96 bg-base-100 mx-5 my-10 shadow-xl">
           <figure>
             <img src={Accounts} />
           </figure>
@@ -24,7 +24,7 @@ const JobCategory = (props) => {
             <p>300 Jobs Available</p>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-base-100 mx-5 my-10 shadow-xl">
           <figure>
             <img src={Design} />
           </figure>
@@ -33,7 +33,7 @@ const JobCategory = (props) => {
             <p>100+ Jobs Available</p>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-base-100 mx-5 my-10 shadow-xl">
           <figure>
             <img src={Marketing} />
           </figure>
@@ -42,7 +42,7 @@ const JobCategory = (props) => {
             <p>150 Jobs Available </p>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-base-100 mx-5 my-10 shadow-xl">
           <figure>
             <img className="ms-0" src={Chip} />
           </figure>

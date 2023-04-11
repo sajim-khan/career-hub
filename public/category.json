@@ -19,9 +19,9 @@
     }, 
     {  
     "id": 4,    
-    "imgUrl": "https://example.com/image4.jpg", 
-    "title": "Marketing Specialist", 
-    "totalJob": 20 
+    "categoryLogo": "https://example.com/image4.jpg", 
+    "categoryName": "Marketing Specialist", 
+    "jobsAvailable": 20 
     }
 ]
 

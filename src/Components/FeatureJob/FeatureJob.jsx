@@ -12,8 +12,8 @@ const FeatureJob = () => {
         need. Its your future
       </p>
 
-      <section className="col flex-cols-2 lg:flex  gap-24 lg:mx-48 py-10 my-5">
-        <div className="card w-96 bg-base-100 shadow-xl my-5">
+      <section className="grid lg:grid-cols-2 gap-20 lg:mx-48 my-5">
+        <div className="card w-96 bg-base-100 mx-4 shadow-xl my-5">
           <figure>
             <img src="" />
           </figure>
@@ -29,11 +29,14 @@ const FeatureJob = () => {
               <p>Salary : 100k - 150k</p>
             </div>
             <div className="card-actions justify-start my-5">
-              <button className="button">View Details</button>
+              <Link to="/details">
+                <button className="button">View Details</button>
+              </Link>
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
+
+        <div className="card w-96 bg-base-100 mx-4 shadow-xl my-5">
           <figure>
             <img src="" />
           </figure>
@@ -49,11 +52,14 @@ const FeatureJob = () => {
               <p>Salary : 100k - 150k</p>
             </div>
             <div className="card-actions justify-start my-5">
-              <button className="button">View Details</button>
+              <Link to="/details">
+                <button className="button">View Details</button>
+              </Link>
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl my-5">
+
+        <div className="card w-96 bg-base-100 mx-4 shadow-xl my-5">
           <figure>
             <img src="" />
           </figure>
@@ -69,9 +75,9 @@ const FeatureJob = () => {
               <p>Salary : 100k - 150k</p>
             </div>
             <div className="card-actions justify-start my-5">
-              <Link to='/details'><button className="button">
-                View Details
-              </button></Link>
+              <Link to="/details">
+                <button className="button">View Details</button>
+              </Link>
             </div>
           </div>
         </div>

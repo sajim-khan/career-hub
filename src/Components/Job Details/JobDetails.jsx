@@ -6,7 +6,7 @@ const JobDetails = () => {
       <h1 className="text-center font-semibold text-4xl bg-gray-200 py-10 ">
         Job Details
       </h1>
-      <div className="flex mx-32 gap-8 my-20">
+      <div className="flex mx-4 lg:mx-32  gap-8 my-20">
         <div>
           <p className="pb-5">
             <span className="text-1xl font-bold">Job Description: </span>A UI/UX
@@ -25,12 +25,29 @@ const JobDetails = () => {
         </div>
 
         <div>
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <div className="card-body items-center text-center">
-              <h2 className="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div className="card w-96 bg-gray-200 mx-4 shadow-xl">
+            <div className="card-body text-start">
+              <h2 className="card-title">Job Details</h2>
+              <p>
+                <span className="font-bold">Salary : </span> 100k{" "}
+              </p>
+              <p>
+                <span className="font-bold">Job Title : </span> Product Designer
+              </p>
+              <h2 className="card-title py-3">Contact Information</h2>
+              <p>
+                <span className="font-bold">Phone : </span> 89437824687
+              </p>
+              <p>
+                <span className="font-bold">Email : </span>
+                info@gmail.com
+              </p>
+              <p>
+                <span className="font-bold">Address : </span>
+                Dhaka, Bangladesh
+              </p>
               <div className="card-actions">
-                <button className="button">Apply Now</button>
+                <button className="button mt-5">Apply Now</button>
               </div>
             </div>
           </div>
