@@ -2,8 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './Home.css'
 import JobCategory from '../JobCategory/JobCategory';
 import FeatureJob from '../FeatureJob/FeatureJob';
+import { useLoaderData } from 'react-router-dom';
+import Img from '../../../public/assets/All Images/P3OLGJ1 copy 1.png'
 
 const Home = () => {
+//load feature job data
+const featureJob = useLoaderData()
+//console.log(featureJob);
 
 const [category, setCategory] = useState([])
 
@@ -12,16 +17,16 @@ useEffect(() => {
     .then((response) => response.json())
     .then((data) => setCategory(data));
 }, []);
-console.log(category);
+//console.log(category);
 
     return (
       <section>
         <div className="hero bg-gray-200 ">
           <div className="hero-content flex-col lg:flex-row-reverse lg:ps-24 ">
-            <img src="" className="max-w-sm rounded-lg  img me-20 " />
+            <img src={Img} className="max-w-sm rounded-lg  img me-20 " />
             <div className="lg:w-1/2 sm:mx-5">
               <h1 className="text-4xl font-bold">
-                Education And Employment{" "}
+                Education And Employment
                 <span className="ttl">Resource Center</span>
               </h1>
               <p className="py-6 me-16">
@@ -35,8 +40,8 @@ console.log(category);
             </div>
           </div>
         </div>
-        <JobCategory category={category}>key={category.id}</JobCategory>
-        <FeatureJob></FeatureJob>
+        <JobCategory key={category.id} category={category}></JobCategory>
+        <FeatureJob featureJob={featureJob}></FeatureJob>
       </section>
     );
 };

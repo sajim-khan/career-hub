@@ -11,46 +11,19 @@ const JobCategory = ({ category }) => {
         Explore thousands of job opportunities with all the information you
         need. Its your future
       </p>
-      <section className="lg:flex  lg:grid-cols-4 gap-6 lg:mx-20 py-10 my-5">
+      <section className="lg:flex lg:grid-cols-4 lg:mx-20 py-10 my-5">
         {category?.map((singleData) => (
           <div className="card w-96 bg-base-100 mx-5 my-10 shadow-xl">
-            <figure>
-              <img src={singleData.categoryLogo} />
-            </figure>
+            <div className="justify-start ms-8">
+              <img className="justify-start" src={singleData.categoryLogo} />
+            </div>
+
             <div className="card-body">
               <h2 className="card-title">{singleData.categoryName}</h2>
               <p>{singleData.availableJob} Jobs Available</p>
             </div>
           </div>
         ))}
-
-        {/* <div className="card w-96 bg-base-100 mx-5 my-10 shadow-xl">
-          <figure>
-            <img src={Design} />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Creative Design</h2>
-            <p>100+ Jobs Available</p>
-          </div>
-        </div>
-        <div className="card w-96 bg-base-100 mx-5 my-10 shadow-xl">
-          <figure>
-            <img src={Marketing} />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Marketing & Sales</h2>
-            <p>150 Jobs Available </p>
-          </div>
-        </div>
-        <div className="card w-96 bg-base-100 mx-5 my-10 shadow-xl">
-          <figure>
-            <img className="ms-0" src={Chip} />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Engineering Job</h2>
-            <p>224 Jobs Available</p>
-          </div>
-        </div> */}
       </section>
     </div>
   );

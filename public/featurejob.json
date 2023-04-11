@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "companyLogo": "https://www.freepnglogos.com/uploads/google-logo-png/file-google-logo-svg-wikimedia-commons-23.png",
+    "companyLogo": "../../../public/assets/All Images/google-1-1 1.png",
     "jobTitle": "Software Engineer",
     "companyName": "Google",
     "remoteOrOnsite": "Remote",
@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "companyLogo": "https://www.logo.wine/a/logo/Netflix/Netflix-Logo.wine.svg",
+    "companyLogo": "../../../public/assets/All Images/netflix-4 1.png",
     "jobTitle": "Data Analyst",
     "companyName": "Netflix",
     "remoteOrOnsite": "Onsite",
@@ -33,9 +33,9 @@
   },
   {
     "id": 3,
-    "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+    "companyLogo": "../../../public/assets/All Images/Group 10021.png",
     "jobTitle": "Product Manager",
-    "companyName": "Amazon",
+    "companyName": "Airbnb",
     "remoteOrOnsite": "Remote",
     "location": "Any Location",
     "fullTimeOrPartTime": "Part-time",
@@ -49,9 +49,9 @@
   },
   {
     "id": 4,
-    "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
+    "companyLogo": "./public/assets/All Images/google-1-1 1.png",
     "jobTitle": "Social Media Manager",
-    "companyName": "Microsoft",
+    "companyName": "Google",
     "remoteOrOnsite": "Remote",
     "location": "Any Location",
     "fullTimeOrPartTime": "Full-time",
@@ -65,9 +65,9 @@
   },
   {
     "id": 5,
-    "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Facebook_New_Logo_%282015%29.svg",
+    "companyLogo": "../../../public/assets/All Images/netflix-4 1.png",
     "jobTitle": "UX Designer",
-    "companyName": "Facebook",
+    "companyName": "Netflix",
     "remoteOrOnsite": "Onsite",
     "location": "San Francisco, CA",
     "fullTimeOrPartTime": "Full-time",
@@ -81,9 +81,9 @@
   },
   {
     "id": 6,
-    "companyLogo": "https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png",
+    "companyLogo": "../../../public/assets/All Images/tesla-9 1.png",
     "jobTitle": "Sales Manager",
-    "companyName": "Apple",
+    "companyName": "Tesla",
     "remoteOrOnsite": "Onsite",
     "location": "New York, NY",
     "fullTimeOrPartTime": "Full-time",

@@ -1,8 +1,13 @@
 import React from "react";
+import { useLoaderData } from "react-router-dom";
+import Details from "./Details";
 
 const JobDetails = () => {
+  const jobDetails = useLoaderData()
+  console.log(jobDetails);
+
   return (
-    <section>
+    <div>
       <h1 className="text-center font-semibold text-4xl bg-gray-200 py-10 ">
         Job Details
       </h1>
@@ -53,7 +58,10 @@ const JobDetails = () => {
           </div>
         </div>
       </div>
-    </section>
+      {jobDetails?.map((details) => (
+        <Details key={details.id} detail={details}></Details>
+      ))}
+    </div>
   );
 };
 
