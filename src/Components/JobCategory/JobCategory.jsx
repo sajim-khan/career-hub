@@ -1,10 +1,7 @@
 import React from "react";
-import Chip from "../../assets/Icons/chip 1.png";
-import Accounts from "../../assets/Icons/accounts 1.png";
-import Marketing from "../../assets/Icons/social-media 1.png";
-import Design from "../../assets/Icons/business 1.png";
 
-const JobCategory = (props) => {
+
+const JobCategory = ({ category }) => {
   return (
     <div>
       <h1 className="text-center text-4xl mt-20 font-sans font-bold pb-7">
@@ -15,16 +12,19 @@ const JobCategory = (props) => {
         need. Its your future
       </p>
       <section className="lg:flex  lg:grid-cols-4 gap-6 lg:mx-20 py-10 my-5">
-        <div className="card w-96 bg-base-100 mx-5 my-10 shadow-xl">
-          <figure>
-            <img src={Accounts} />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Account & Finance</h2>
-            <p>300 Jobs Available</p>
+        {category?.map((singleData) => (
+          <div className="card w-96 bg-base-100 mx-5 my-10 shadow-xl">
+            <figure>
+              <img src={singleData.categoryLogo} />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">{singleData.categoryName}</h2>
+              <p>{singleData.availableJob} Jobs Available</p>
+            </div>
           </div>
-        </div>
-        <div className="card w-96 bg-base-100 mx-5 my-10 shadow-xl">
+        ))}
+
+        {/* <div className="card w-96 bg-base-100 mx-5 my-10 shadow-xl">
           <figure>
             <img src={Design} />
           </figure>
@@ -50,7 +50,7 @@ const JobCategory = (props) => {
             <h2 className="card-title">Engineering Job</h2>
             <p>224 Jobs Available</p>
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );

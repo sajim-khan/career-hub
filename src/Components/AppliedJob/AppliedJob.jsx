@@ -9,19 +9,19 @@ const AppliedJob = () => {
           Applied Job
         </h1>
       </div>
-      <div className="dropdown dropdown-right">
-        <label tabIndex={0} className="btn m-1">
-          Click
+      <div className="dropdown dropdown-right ms-20">
+        <label tabIndex={0} className="btn btn-primary m-2">
+          Filter By
         </label>
         <ul
           tabIndex={0}
           className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
         >
           <li>
-            <a>Item 1</a>
+            <a>Remote</a>
           </li>
           <li>
-            <a>Item 2</a>
+            <a>Onsite</a>
           </li>
         </ul>
       </div>
@@ -54,3 +54,4 @@ const AppliedJob = () => {
   );
 };
 export default AppliedJob;
+

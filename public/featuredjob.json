@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "companyLogo": "https://example.com/logo1.png",
+    "companyLogo": "https://www.freepnglogos.com/uploads/google-logo-png/file-google-logo-svg-wikimedia-commons-23.png",
     "jobTitle": "Software Engineer",
-    "companyName": "ABC Company",
+    "companyName": "Google",
     "remoteOrOnsite": "Remote",
     "location": "Any Location",
     "fullTimeOrPartTime": "Part-time",
@@ -17,9 +17,9 @@
   },
   {
     "id": 2,
-    "companyLogo": "https://example.com/logo2.png",
+    "companyLogo": "https://www.logo.wine/a/logo/Netflix/Netflix-Logo.wine.svg",
     "jobTitle": "Data Analyst",
-    "companyName": "XYZ Corporation",
+    "companyName": "Netflix",
     "remoteOrOnsite": "Onsite",
     "location": "New York, NY",
     "fullTimeOrPartTime": "Full-time",
@@ -33,9 +33,9 @@
   },
   {
     "id": 3,
-    "companyLogo": "https://example.com/logo3.png",
+    "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
     "jobTitle": "Product Manager",
-    "companyName": "123 Industries",
+    "companyName": "Amazon",
     "remoteOrOnsite": "Remote",
     "location": "Any Location",
     "fullTimeOrPartTime": "Part-time",
@@ -49,9 +49,9 @@
   },
   {
     "id": 4,
-    "companyLogo": "https://example.com/logo1.png",
+    "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
     "jobTitle": "Social Media Manager",
-    "companyName": "ABC Corp",
+    "companyName": "Microsoft",
     "remoteOrOnsite": "Remote",
     "location": "Any Location",
     "fullTimeOrPartTime": "Full-time",
@@ -65,15 +65,15 @@
   },
   {
     "id": 5,
-    "companyLogo": "https://example.com/logo2.png",
+    "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Facebook_New_Logo_%282015%29.svg",
     "jobTitle": "UX Designer",
-    "companyName": "XYZ Tech",
+    "companyName": "Facebook",
     "remoteOrOnsite": "Onsite",
     "location": "San Francisco, CA",
     "fullTimeOrPartTime": "Full-time",
     "salary": "$90,000 - $110,000",
     "jobDescription": "We are seeking a talented UX Designer to join our growing team. The successful candidate will be responsible for designing and delivering user-centered designs for our web and mobile applications.",
-    "jobResponsibility": "Conduct user research to inform design decisions. Create wireframes, prototypes, and high-fidelity designs. Collaborate with product managers, developers, and other stakeholders to ensure designs meet user needs and business goals. Conduct usability testing and iterate on designs based on feedback.",
+    "jobResponsibility": "Conduct user research to inform design decisions. Create prototypes, and high-fidelity designs. Collaborate with product managers, developers, and other stakeholders to ensure designs meet user needs and business goals. Conduct usability testing and iterate on designs based on feedback.",
     "educationalRequirements": "Bachelor's degree in Design, HCI, or related field",
     "experiences": "5+ years of experience in UX design",
     "phone": "888-888-8888",
@@ -81,9 +81,9 @@
   },
   {
     "id": 6,
-    "companyLogo": "https://example.com/logo3.png",
+    "companyLogo": "https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png",
     "jobTitle": "Sales Manager",
-    "companyName": "123 Sales",
+    "companyName": "Apple",
     "remoteOrOnsite": "Onsite",
     "location": "New York, NY",
     "fullTimeOrPartTime": "Full-time",
@@ -96,4 +96,5 @@
     "email": "jobs@123sales.com"
   }
 ]
+
 

@@ -1,18 +1,24 @@
-import React from 'react';
-import Img from '../../assets/All Images/P3OLGJ1 copy 1.png'
+import React, { useEffect, useState } from 'react';
 import './Home.css'
 import JobCategory from '../JobCategory/JobCategory';
 import FeatureJob from '../FeatureJob/FeatureJob';
 
 const Home = () => {
+
+const [category, setCategory] = useState([])
+
+useEffect(() => {
+  fetch("category.json")
+    .then((response) => response.json())
+    .then((data) => setCategory(data));
+}, []);
+console.log(category);
+
     return (
       <section>
         <div className="hero bg-gray-200 ">
           <div className="hero-content flex-col lg:flex-row-reverse lg:ps-24 ">
-            <img
-              src={Img}
-              className="max-w-sm rounded-lg  img me-20 "
-            />
+            <img src="" className="max-w-sm rounded-lg  img me-20 " />
             <div className="lg:w-1/2 sm:mx-5">
               <h1 className="text-4xl font-bold">
                 Education And Employment{" "}
@@ -29,7 +35,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <JobCategory></JobCategory>
+        <JobCategory category={category}>key={category.id}</JobCategory>
         <FeatureJob></FeatureJob>
       </section>
     );
@@ -39,21 +45,3 @@ export default Home;
 
 
 
-/*
-    <div className="flex justify-between bg-gray-200 py-5 gap-32 px-36 container">
-        <div className="side-bar justify-center w-1/2">
-          <h1>One Step Closer To Your Dream Job</h1>
-          <p>
-            Explore thousands of job opportunities with all the information you
-            need. Its your future. Come find it. Manage all your job application
-            from start to finish.
-          </p>
-          <button className='button text-white items-center font-bold py-2 px-4 rounded"'>
-            Get Started
-          </button>
-        </div>
-        <div className="img ">
-          <img src={Img} alt="" />
-        </div>
-      </div>
-*/
