@@ -21,7 +21,7 @@ const Details = ({ details }) => {
   };
 
   return (
-    <div className="flex mx-4 lg:mx-32  gap-8 my-20">
+    <div className="sm:flex grid grid-cols-1 mx-4 lg:mx-32  gap-8 my-20">
       <div>
         <p className="pb-5">
           <span className="text-1xl font-bold">Job Description: </span>
