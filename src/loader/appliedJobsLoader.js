@@ -1,16 +1,17 @@
 // import { getAppliedJob } from "../utilities/fakedb";
 
 const appliedJobsLoader = async () => {
-  const loadedJobs = await fetch("jobs.json");
+  const loadedJobs = await fetch("featurejob.json");
   const jobs = await loadedJobs.json();
+  console.log(jobs)
 
   // if cart data is in database, you have to use async await
-  // const storedJobs = getAppliedJob();
+  const storedJobs = getAppliedJob();
 
   const savedJobs = [];
 
   for (const id in storedJobs) {
-    const appliedJob = jobs.find((pd) => pd.id === id);
+    const appliedJob = jobs.find((pd) => pd.id.toString() === id);
     if (appliedJob) {
       // alert('Application')
       // const quantity = storedJobs[id];

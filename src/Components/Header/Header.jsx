@@ -60,7 +60,7 @@ const Header = () => {
             </li>
             <li>
               <Link to="/statistics">
-                <span className="text">Statistics</span>
+                <span>Statistics</span>
               </Link>
             </li>
             <li>

@@ -22,16 +22,26 @@ const Blog = () => {
           <p className="mb-5 mt-2">
             <span className="font-bold">Ans: </span>Custom hook is a JavaScript
             function which start with "use" . Custom Hook contain stateful
-            logic, side effects, reusable functionality that can be
-            shared between components.
+            logic, side effects, reusable functionality that can be shared
+            between components. A custom hook is a reusable function that
+            contains one or more React hooks and can be used in multiple
+            components.
           </p>
           <h1 className="text-2xl">What is useRef? Why we use it?</h1>
           <p className="mb-5 mt-2">
-            <span className="font-bold">Ans: </span>
+            <span className="font-bold">Ans: </span>useRef is a react hook which
+            returns a mutable reference object. We use this for various reason .
+            When we need to access DOM nodes then we use it. When we need to
+            store a mutable value then we use it. When we need to cache a value
+            then we use it.
           </p>
           <h1 className="text-2xl">What is useMemo? Why we use it?</h1>
           <p className="mt-2 mb-5">
-            <span className="font-bold">Ans: </span>
+            <span className="font-bold">Ans: </span>useMemo is a hook in React
+            that allows you to optimize performance by memoizing a value. It
+            takes a function and a list of dependencies as arguments and returns
+            a memoized value. This can improve the speed and efficiency of your
+            application by reducing unnecessary re-renders.
           </p>
         </div>
       </div>

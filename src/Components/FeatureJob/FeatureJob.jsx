@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Feature from "./Feature";
-import { useNavigate } from "react-router-dom";
+
 
 
 const FeatureJob = ({ featureJob }) => {
@@ -23,16 +23,13 @@ const jobsToShow = isAllJob? featureJob.length : 4
       </p>
 
       <section className="grid lg:grid-cols-2 lg:mx-48 my-5">
-        {featureJob?.filter((item,idx) => idx < jobsToShow).map((feature) => (
-          <Feature key={feature.id} feature={feature}></Feature>
-        ))}
-        <div>
-          <button
-            onClick={allJobsToSee}
-            className="button ms-10 lg:ms-96 w-40 my-5"
-          >
-            Show More
-          </button>
+        {featureJob
+          ?.filter((item, idx) => idx < jobsToShow)
+          .map((feature) => (
+            <Feature key={feature.id} feature={feature}></Feature>
+          ))}
+        <div className="button pt-3 ms-10 lg:ms-96 w-40 my-5">
+          <button onClick={allJobsToSee}> {isAllJob? 'Show less Job' : 'Show More Job'}</button>
         </div>
       </section>
     </div>

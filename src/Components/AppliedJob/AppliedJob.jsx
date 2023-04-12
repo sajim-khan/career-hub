@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import JobDetails from "../Job Details/JobDetails";
 import { useLoaderData } from "react-router-dom";
 
 const AppliedJob = () => {
+
+const {pathname} = useLocation();
+console.log(pathname);
+
+const [isRemote, setIsRemote] = useState()
 
 const appliedJobs = useLoaderData()
 console.log(appliedJobs);
@@ -14,7 +19,7 @@ console.log(appliedJobs);
           Applied Job
         </h1>
       </div>
-      <div className="dropdown dropdown-right ms-20">
+      {/* <div className="dropdown dropdown-right ms-20">
         <label tabIndex={0} className="btn btn-primary m-2">
           Filter By
         </label>
@@ -23,20 +28,27 @@ console.log(appliedJobs);
           className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
         >
           <li>
-            <a>Remote</a>
+            <a >Remote</a>
           </li>
           <li>
             <a>Onsite</a>
           </li>
         </ul>
+      </div> */}
+      <div className="flex justify-end my-8 me-10">
+        <button>Onsite</button>
+        <button>Remote</button>
       </div>
       <div>
         <div className="card card-side bg-base-100 mx-20 shadow-xl">
+          {/* {
+          appliedJobs?.length > 0 ? appliedJobs?.map()
+          
+          <h3>you did not apply any jobs</h3>
+        } */}
+
           <figure className="p-5">
-            <img
-              src="/images/stock/photo-1635805737707-575885ab0820.jpg"
-              alt="Movie"
-            />
+            <img src="" />
           </figure>
           <div className="card-body  justify-between">
             <div>
