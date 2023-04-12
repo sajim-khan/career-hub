@@ -11,7 +11,14 @@
 
 
 
-
+## Project Details
+1.This project is about JobSpot where people can apply for their desire jobs . In this project we have header ,footer, menu, job category list, job feature, job details, and also chart for assignment marks. 
+1. In this project we used Link for dynamic route 
+2. In this project we have view details button when we click this button then it shows details about the specific job featured details.
+3. Here also have show more button . After button is clicked it shows all featured card where initially in home page it shows 4 feature job.
+4. In this project we have apply now button . After clicking this button it shows job which is you selected via apply button .
+5. Here also added blog page where some question and answer is displayed.
+6. When you click applied job menu then you will see the selected job.
 
 
 
