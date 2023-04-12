@@ -1,4 +1,4 @@
-// import { getAppliedJob } from "../utilities/fakedb";
+import { getShoppingCart } from "../utilities/fakedb";
 
 const appliedJobsLoader = async () => {
   const loadedJobs = await fetch("featurejob.json");
@@ -6,7 +6,7 @@ const appliedJobsLoader = async () => {
   console.log(jobs)
 
   // if cart data is in database, you have to use async await
-  const storedJobs = getAppliedJob();
+  const storedJobs = getShoppingCart();
 
   const savedJobs = [];
 
