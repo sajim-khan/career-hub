@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import JobDetails from "../Job Details/JobDetails";
-import { useLoaderData, useLocation } from "react-router-dom";
+import { Link, useLoaderData, useLocation } from "react-router-dom";
 
 const AppliedJob = () => {
 
@@ -42,8 +42,10 @@ console.log(appliedJobs);
                   </div>
                 </div>
                 <div className="card-actions lg:justify-end">
+                  <Link to={`/details/${item.id}`} className="button">
+                    View Details
+                  </Link>
                   
-                  <button className="button">View Details</button>
                 </div>
               </div>
             </div>
