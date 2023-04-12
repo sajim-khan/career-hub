@@ -1,7 +1,12 @@
 import React from "react";
 import JobDetails from "../Job Details/JobDetails";
+import { useLoaderData } from "react-router-dom";
 
 const AppliedJob = () => {
+
+const appliedJobs = useLoaderData()
+console.log(appliedJobs);
+
   return (
     <section>
       <div>
@@ -45,7 +50,7 @@ const AppliedJob = () => {
               </div>
             </div>
             <div className="card-actions items-center lg:justify-end">
-              <button className="button">View Details</button>
+              <button className="button">Apply Job</button>
             </div>
           </div>
         </div>

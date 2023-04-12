@@ -1,25 +1,25 @@
 [  
     {   
     "id": 1,   
-    "categoryLogo": "../../../public/assets/Icons/chip 1.png",   
+    "categoryLogo": "https://previews.123rf.com/images/martialred/martialred1601/martialred160100008/50020796-computer-chip-circuit-board-flat-icon-for-apps-and-websites.jpg",   
     "categoryName": "Software Engineer",    
     "availableJob": 250 
     }, 
     { 
     "id": 2,    
-    "categoryLogo": "../../../public/assets/Icons/business 1.png",   
+    "categoryLogo": "https://cdn3.iconfinder.com/data/icons/sympletts-part-4/128/database-1024.png",   
     "categoryName": "Data Analyst",  
     "availableJob": 150  
     }, 
     {
     "id": 3,  
-    "categoryLogo": "../../../public/assets/Icons/accounts 1.png",  
+    "categoryLogo": "https://cdn.iconscout.com/icon/premium/png-512-thumb/accounts-34-839945.png?f=avif&w=512",  
     "categoryName": "Accounts and finance", 
     "availableJob": 225  
     }, 
     {  
     "id": 4,    
-    "categoryLogo": "../../../public/assets/Icons/social-media 1.png", 
+    "categoryLogo": "https://thumbs.dreamstime.com/z/social-marketing-icon-vector-illustration-black-sign-isolated-background-social-marketing-icon-vector-illustration-sign-102113330.jpg", 
     "categoryName": "Marketing And Sales", 
     "availableJob": 120 
     }

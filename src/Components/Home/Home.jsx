@@ -23,13 +23,13 @@ useEffect(() => {
       <section>
         <div className="hero bg-gray-200 ">
           <div className="hero-content flex-col lg:flex-row-reverse lg:ps-24 ">
-            <img src={Img} className="max-w-sm rounded-lg  img me-20 " />
+            <img src={Img} className="max-w-sm rounded-lg  img me-16 " />
             <div className="lg:w-1/2 sm:mx-5">
-              <h1 className="text-4xl font-bold">
-                Education And Employment
+              <h1 className="text-5xl font-bold">
+                Education And Employment <br />
                 <span className="ttl">Resource Center</span>
               </h1>
-              <p className="py-6 me-16">
+              <p className="py-6 ">
                 The Job Spot was designed as a multi-agency location created to
                 better serve adults facing education and employment barriers in
                 South Bakersfield. Hosting multiple resources in one spot, we
@@ -41,7 +41,7 @@ useEffect(() => {
           </div>
         </div>
         <JobCategory key={category.id} category={category}></JobCategory>
-        <FeatureJob featureJob={featureJob}></FeatureJob>
+        {featureJob.length && <FeatureJob featureJob={featureJob}></FeatureJob>}
       </section>
     );
 };

@@ -1,11 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import Feature from "./Feature";
+import { useNavigate } from "react-router-dom";
 
 
 const FeatureJob = ({ featureJob }) => {
 
-const { companyLogo, companyName } = featureJob;
+const [isAllJob, setAllJob] = useState(false)
+
+const allJobsToSee = () => {
+  setAllJob(x => !x)
+}
+const jobsToShow = isAllJob? featureJob.length : 4
+
   return (
     <div>
       <p className="text-center text-4xl mt-20 font-sans font-bold pb-7 mx-24">
@@ -17,13 +23,21 @@ const { companyLogo, companyName } = featureJob;
       </p>
 
       <section className="grid lg:grid-cols-2 lg:mx-48 my-5">
-        {featureJob?.map((feature) => (
-          <Feature feature={feature}></Feature>
+        {featureJob?.filter((item,idx) => idx < jobsToShow).map((feature) => (
+          <Feature key={feature.id} feature={feature}></Feature>
         ))}
-        <button className="btn btn-primary">Show all</button>
+        <div>
+          <button
+            onClick={allJobsToSee}
+            className="button ms-10 lg:ms-96 w-40 my-5"
+          >
+            Show More
+          </button>
+        </div>
       </section>
     </div>
   );
 };
 
 export default FeatureJob;
+

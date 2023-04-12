@@ -1,26 +1,40 @@
-import React from 'react';
+import React from "react";
+import { addToDb } from "../../utilities/fakedb";
 
 const Details = ({ details }) => {
-console.log(details);
+  const {
+    id,
+    jobDescription,
+    jobResponsibility,
+    email,
+    phone,
+    experiences,
+    jobTitle,
+    salary,
+    educationalRequirements,
+    location,
+  } = details;
 
+  const applyButtonHandler = () => {
+    console.log(id)
+    addToDb(id)
+  };
 
   return (
     <div className="flex mx-4 lg:mx-32  gap-8 my-20">
       <div>
         <p className="pb-5">
-          <span className="text-1xl font-bold">Job Description: </span>A UI/UX
-          designer is responsible for designing and creating engaging and
-          effective interfaces for software and web applications.
+          <span className="text-1xl font-bold">Job Description: </span>
+          {jobDescription}
         </p>
         <p className="pb-5">
-          <span className="text-1xl font-bold">Job Responsibility: </span>A
-          UI/UX designer is responsible for designing and creating engaging and
-          effective interfaces for software and web applications.
+          <span className="text-1xl font-bold">Job Responsibility: </span>
+          {jobResponsibility}
         </p>
         <h1 className="text-1xl font-bold pb-3">Educational Requirements:</h1>
-        <p className="pb-5">A UI/UX designer</p>
-        <h1 className="text-1xl font-bold pb-3">Experience:</h1>
-        <p className="pb-5">A UI/UX designer</p>
+        {educationalRequirements}
+        <h1 className="text-1xl font-bold py-3">Experience:</h1>
+        {experiences}
       </div>
 
       <div>
@@ -28,25 +42,28 @@ console.log(details);
           <div className="card-body text-start">
             <h2 className="card-title">Job Details</h2>
             <p>
-              <span className="font-bold">Salary : </span> 100k{" "}
+              <span className="font-bold">Salary : </span> {salary}
             </p>
             <p>
-              <span className="font-bold">Job Title : </span> Product Designer
+              <span className="font-bold">Job Title : </span> {jobTitle}
             </p>
             <h2 className="card-title py-3">Contact Information</h2>
             <p>
-              <span className="font-bold">Phone : </span> 89437824687
+              <span className="font-bold">Phone : </span>
+              {phone}
             </p>
             <p>
               <span className="font-bold">Email : </span>
-              info@gmail.com
+              {email}
             </p>
             <p>
               <span className="font-bold">Address : </span>
-              
+              {location}
             </p>
             <div className="card-actions">
-              <button className="button mt-5">Apply Now</button>
+              <button onClick={applyButtonHandler} className="button mt-5">
+                Apply Now
+              </button>
             </div>
           </div>
         </div>

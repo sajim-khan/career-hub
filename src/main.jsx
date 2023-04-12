@@ -9,7 +9,7 @@ import AppliedJob from './Components/AppliedJob/AppliedJob';
 import Blog from './Components/Blog/Blog';
 import Home from './Components/Home/Home';
 import JobDetails from './Components/Job Details/JobDetails';
-import JobCategory from './Components/JobCategory/JobCategory';
+import appliedJobsLoader from './loader/appliedJobsLoader';
 
 const router = createBrowserRouter([
   {
@@ -27,15 +27,16 @@ const router = createBrowserRouter([
         element: <Statistics></Statistics>,
       },
       {
-        path: "apply",
+        path: "applied-jobs",
         element: <AppliedJob></AppliedJob>,
+        loader: appliedJobsLoader
       },
       {
         path: "blogs",
         element: <Blog></Blog>,
       },
       {
-        path: "details",
+        path: "/details/:id",
         element: <JobDetails></JobDetails>,
         loader: () => fetch("featurejob.json"),
       },
