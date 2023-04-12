@@ -25,7 +25,7 @@ const marks = [
   {
     id: 2,
     assignmentName: "Assignment 2",
-    assignmentMarks: 56,
+    assignmentMarks: 55,
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const marks = [
   {
     id: 4,
     assignmentName: "Assignment 4",
-    assignmentMarks: 60,
+    assignmentMarks: 53,
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const marks = [
   {
     id: 6,
     assignmentName: "Assignment 6",
-    assignmentMarks: 60,
+    assignmentMarks: 55,
   },
   {
     id: 7,
@@ -55,7 +55,7 @@ const marks = [
   {
     id: 8,
     assignmentName: "Assignment 8",
-    assignmentMarks: 58,
+    assignmentMarks: 56,
   },
 ];
 
